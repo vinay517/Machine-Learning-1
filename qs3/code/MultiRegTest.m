@@ -1,0 +1,14 @@
+a = fluML6(:, 14);
+b = fluML6(:, 10);
+c = fluML6(:,7);
+x=a/max(a);
+y=b/max(b);
+z=c/max(c);
+h= -0.4937+(-0.2733*x)+ (0.5089 *z);
+j=1/(2*m)*sum((h-y).^2);
+figure;
+plot3(x,z,h);
+xlabel('x');
+ylabel('z');
+zlabel('h');
+title('test graph for hypothesis');
